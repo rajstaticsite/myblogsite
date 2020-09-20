@@ -2,7 +2,9 @@
 <html lang="en-us">
   <head><link rel="icon" href="/favicon_main.svg"><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" /><title>Personal website and blog - Tags</title>
+<meta http-equiv="x-ua-compatible" content="ie=edge" /><meta property="og:url"  content="https://example.com/topic_1/blog3/" />
+    <meta property="og:type" content="article" /><meta property="og:title" content="this is my third blog" /><meta property="og:description" content="This summary is multiline" /><meta property="og:image:width"  content="375" />
+        <meta property="og:image:height" content="250" /><meta property="og:image" content="https://example.com/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" /><title>Personal website and blog - this is my third blog</title>
 
     
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
@@ -108,79 +110,63 @@
   
     </div>
   </nav>
-<section class="section">
-                    <div class="container">
-                        <div class="columns">
-                        <div class="column is-centered-tablet-portrait">
-                            <h1 class="title section-title">blog</h1>
-                            <h5 class="subtitle is-5 is-muted"></h5>
-                            <div class="divider"></div>        
-                            <div class="section">
-                            <div class="container">
-                                <div class="columns"></div>
-                                        <div class="columns"><div class="column is-4"><div class="box">
-      <figure class="image is-3by2">
-        <a href="/topic_1/blog3/">
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title is-2 section-title">this is my third blog</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
         
-          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" alt="">
-        
-        </a>
-      </figure>
-      <h3 class="title is-5 refresh-summary-title">
-        this is my third blog
-      </h3>
-      <p class="refresh-summary">This summary is multiline</p> 
-      <div class="action has-text-right">
-        <a href="/topic_1/blog3/" class="button is-primary">
-                Read more
-            </a>
-      </div>
-    </div>
-  </div>
-</div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </section><section class="section">
-                    <div class="container">
-                        <div class="columns">
-                        <div class="column is-centered-tablet-portrait">
-                            <h1 class="title section-title">demo</h1>
-                            <h5 class="subtitle is-5 is-muted"></h5>
-                            <div class="divider"></div>        
-                            <div class="section">
-                            <div class="container">
-                                <div class="columns"></div>
-                                        <div class="columns"><div class="column is-4"><div class="box">
-      <figure class="image is-3by2">
-        <a href="/topic_1/blog3/">
-        
-          <img src="/images/default_summary_hu2be732aee21a2469ead3fe1f2df8caca_2088687_600x0_resize_q75_box.jpg" alt="">
-        
-        </a>
-      </figure>
-      <h3 class="title is-5 refresh-summary-title">
-        this is my third blog
-      </h3>
-      <p class="refresh-summary">This summary is multiline</p> 
-      <div class="action has-text-right">
-        <a href="/topic_1/blog3/" class="button is-primary">
-                Read more
-            </a>
-      </div>
-    </div>
-  </div>
-</div>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </section>
+        <section class="section content has-text-justified">
+          <p><strong>This is my third blog</strong></p>
+<h1 id="this-is-a-heading-1">This is a heading 1</h1>
+<p><a href="https://www.cnn.com">cnn</a></p>
+<ol>
+<li>test</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e"># Copyright (c) Microsoft Corporation.</span>
+<span style="color:#75715e"># Licensed under the MIT License.</span>
 
-    <footer class="footer footer-dark">
+<span style="color:#75715e"># This is a short example of the Docker-PowerShell module. The same cmdlets may be used to manage both local &amp; remote machines, including both Windows &amp; Linux hosts</span>
+<span style="color:#75715e"># The only difference between them is the example container image is pulled &amp; run.</span>
+
+<span style="color:#75715e"># Import the Docker module</span>
+<span style="color:#75715e">#    It&#39;s available at https://github.com/Microsoft/Docker-PowerShell</span>
+Import-Module Docker
+
+<span style="color:#75715e"># Pull the &#39;hello-world&#39; image from Docker Hub</span>
+Pull-ContainerImage hello-world <span style="color:#75715e"># Linux</span>
+<span style="color:#75715e"># Pull-ContainerImage patricklang/hello-world # Windows</span>
+
+<span style="color:#75715e"># Now run it</span>
+Run-ContainerImage hello-world <span style="color:#75715e"># Linux</span>
+<span style="color:#75715e"># Run-ContainerImage patricklang/hello-world # Windows</span>
+
+<span style="color:#75715e"># Make some room on the screen</span>
+cls
+
+<span style="color:#75715e"># List all containers that have exited</span>
+Get-Container | Where-Object State <span style="color:#f92672">-EQ</span> <span style="color:#e6db74">&#34;exited&#34;</span>
+
+<span style="color:#75715e"># That found the right one, so go ahead and remove it</span>
+Get-Container | Where-Object State <span style="color:#f92672">-EQ</span> <span style="color:#e6db74">&#34;exited&#34;</span> | Remove-Container
+
+<span style="color:#75715e"># Now remove the container image</span>
+Remove-ContainerImage hello-world
+
+<span style="color:#75715e"># And list the container images left on the container host</span>
+Get-ContainerImage
+</code></pre></div>
+        </section>
+      </div>
+    </div>
+  </div>  
+  </section>
+<footer class="footer footer-dark">
   <div class="container">
     <div class="columns">
       <div class="column">
